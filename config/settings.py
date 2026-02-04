@@ -14,7 +14,7 @@ class Config:
         self.max_records: int = 50
         self.max_text_length: int = 2000
         self.auto_correct: bool = True
-        self.model: str = "glm-4-flash"  # 使用更快的 GLM-4-Flash 模型（响应速度约1-3秒）
+        self.model: str = "glm-4-air"  # 使用 GLM-4-Air 模型（质量更好，响应约5-10秒）
         self.load_config()
 
     def load_config(self):

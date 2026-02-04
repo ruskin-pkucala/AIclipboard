@@ -110,11 +110,9 @@ class ResultWindow(QDialog):
 
         # 右侧：纠错后
         right_panel = QVBoxLayout()
-        right_label = QLabel("[纠错后]")
-        right_label.setFont(QFont("Microsoft YaHei", 10, QFont.Bold))
         self.corrected_text = QTextEdit()
         self.corrected_text.setFont(QFont("Microsoft YaHei", 11))
-        right_panel.addWidget(right_label)
+        self.corrected_text.setPlaceholderText("纠错结果将显示在这里...")
         right_panel.addWidget(self.corrected_text)
 
         # 添加到分割器
